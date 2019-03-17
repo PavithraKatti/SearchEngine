@@ -19,7 +19,7 @@ public class JobSearchControllerTest {
     }
 
     @Test
-    public void testGetMatchingJobs() {
+    public void testGetMatchingJobsForValidId() {
         // Setup
         final int workerId = 3;
 
