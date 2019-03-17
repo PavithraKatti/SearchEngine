@@ -29,4 +29,16 @@ public class JobSearchControllerTest {
         // Verify the results
         assertTrue(result.size() > 0);
     }
+    
+    @Test
+    public void testGetMatchingJobsForInValidId() {
+        // Setup
+        final int workerId = 100;
+
+        // Run the test
+        final List<Job> result = jobSearchControllerUnderTest.getMatchingJobs(workerId);
+
+        // Verify the results
+        assertTrue(result.size() == 0);
+    }
 }
